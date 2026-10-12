@@ -6,13 +6,25 @@ public class Person {
     String lastName;
     int age;
 
-    public static void main(String[] args) {
+    public Person(String firstName, String lastName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
 
-        Person person = new Person();
-        person.firstName = "Nikolay";
-        person.lastName = "Bascov";
-        person.age = 25;
-        person.introduce();
+    public static void main(String[] args) {
+        Person person1 = new Person("Nikolay", "Bascov", 25);
+        Person person2 = new Person("Anna", "Ivanova", 18);
+        Person person3 = new Person("Ivan", "Petrov", 34);
+        person1.introduce();
+        person3.introduce();
+        person2.introduce();
+
+        //Person person = new Person();
+        //person.firstName = "Nikolay";
+        //person.lastName = "Bascov";
+        //person.age = 25;
+        //person.introduce();
     }
 
     public void introduce() {

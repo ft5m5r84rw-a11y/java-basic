@@ -14,7 +14,7 @@ public class Fruits {
         );
 
         for (int i = 0; i < fruits.size(); i++) {
-            System.out.println(i+1 + ". " + fruits.get(i));
+            System.out.println((i + 1) + "." + fruits.get(i));
         }
 
     }

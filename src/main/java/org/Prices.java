@@ -1,6 +1,7 @@
 package org;
 
 import java.util.List;
+import java.util.Locale;
 
 public class Prices {
     public static void main(String[] args) {
@@ -17,16 +18,16 @@ public class Prices {
         for (double price : prices) {
             total += price;
         }
-        System.out.println("Сумма всех товаров: " + total);
+        System.out.printf(Locale.US, "Сумма всех товаров: %.2f%n", total);
 
         // вывести, хватает ли бюджета
         System.out.println("Бюджет: " + budget);
         if (total > budget) {
             System.out.println("Бюджета не хватает. " + " Не хватает " + (total - budget));
         } else {
-            System.out.println("Бюджета хватает. " + "Остаток: " + (budget - total));
+            System.out.printf(Locale.US, "Бюджета хватает. Остаток: %.2f%n", budget - total);
         }
 
 
-        }
     }
+}

@@ -18,11 +18,12 @@ public class Shopping {
         while (i < prices.size() && totals + prices.get(i) <= budget) {
             totals += prices.get(i);
             bought++;
-            i++;}
+            i++;
+        }
 
-            System.out.println("Куплено: " + bought + " товара на сумму " + totals);
-            System.out.println("Остаток бюджета: " + (budget - totals));
-            System.out.println("Не куплено: " + (prices.size() - bought) + (" товаров"));
+        System.out.println("Куплено: " + bought + " товара на сумму " + totals);
+        System.out.println("Остаток бюджета: " + (budget - totals));
+        System.out.println("Не куплено: " + (prices.size() - bought) + " товаров");
 
     }
-    }
+}

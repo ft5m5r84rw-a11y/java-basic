@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class RealEstatePayback {
@@ -23,11 +22,11 @@ public class RealEstatePayback {
             totalEarned += monthlyRent;
 
             if (months % 12 == 0) {
-            monthlyRent += monthlyRent * (yearlyIndexation / 100);}
+                monthlyRent += monthlyRent * (yearlyIndexation / 100);
+            }
         }
         System.out.println("Заработали: " + totalEarned + " рублей за " + months + "  месяцев");
-        }
-
-
-
     }
+
+
+}
